@@ -1,0 +1,421 @@
+:root{
+  --red: #FF6565;
+  --white: #ffff;
+  --black: #071629;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family:'Source Sans Pro';
+  text-align: center;
+  color: var(--black);
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+}
+.hero-container{
+  background-image: url(./assets/images/headphones_hero_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 95vh;
+  padding-top: 5vh;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+}
+
+.nav-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15vw;
+  flex-direction: 1;
+}
+
+.nav-list{
+  display: flex;
+  gap: 30px;
+}
+
+.nav-container li, .nav-container a{
+  color: var(--white);
+  text-decoration: none;
+  list-style: none;
+}
+
+.hero-cta h2, 
+.hero-cta h3, 
+.hero-cta p{
+  color: var(--white);
+  text-align: center;
+}
+
+.hero-cta{
+  margin: 0 auto;
+  width: 637px;
+  height: 313px;
+  padding-top: 400px;
+}
+
+.hero-cta h2{
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.hero-cta h3{
+  font-size: 16px;
+  padding-top: 5px;
+  font-weight: bold;
+}
+
+.call-to-action{
+  margin: 30px auto 60px;
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  width: 162px;
+  height: 44px;
+  border-radius: 22px;
+  text-decoration: none;
+  border: none;
+  background-color: var(--red);
+  color: var(--white);
+  box-shadow: 0px 2px 100px black;
+  cursor: pointer;
+}
+
+.hero-cta p{
+  margin-top: 100px;
+  line-height: 26px;
+}
+
+.what-we-do{
+  margin-bottom: 100px;
+}
+
+.we-do{
+  margin: 0 auto;
+  padding: 5px;
+  width: 637px;
+  height: 184px;
+}
+
+.we-do h2{
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.we-do p{
+  line-height: 26px;
+  font-size: 16px;
+}
+
+.services-container{
+  width: 1002px;
+  height: 193px;
+  margin: 50px auto;
+}
+
+.services{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.services span{
+  font-size: 100px;
+  color: var(--red);
+}
+
+.services h3, .services p{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.results{
+  background-image: url(./assets/images/headphones_hero_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 50vh;
+  padding-top: 25vh;
+  padding-bottom: 20vh;
+  margin-bottom: 100px;
+  color: var(--white);
+}
+
+.results .we-do h2{
+  font-size: 32px;
+  color: var(--white);
+}
+ .results .we-do p{
+  font-size: 16px;
+  color: var(--white);
+}
+
+.results .services-container{
+  position: relative;
+}
+
+.results .services{
+  justify-content: space-between;
+}
+
+.results .services h3{
+  position: absolute;
+  top: 20%;
+  transform: translateX(130%);
+  font-size: 46px;
+  color: var(--white);
+}
+
+.results .services p{
+  position: absolute;
+  top: 60%;
+  transform: translateX(40%);
+  font-size: 14px;
+  color: var(--white);
+}
+
+.results .services img{
+  width: 200px;
+}
+
+.form-container{
+  width: 335px;
+  height: fit-content;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.form-container h2{
+  font-size: 32px;
+}
+
+.form-container form{
+  border-bottom: 2px solid #D4D6DA;
+  width: 270px;
+  padding: 10px 0;
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form-container form input{
+  border: none;
+  background: none;
+  margin-left: 10px;
+  text-align: left;
+  outline: none;
+  font-size: 14px;
+}
+
+.form-container .call-to-action{
+  box-shadow: none;
+  cursor: pointer;
+}
+
+footer{
+  background-color: var(--black);
+  width: 100vw;
+  height: fit-content;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+
+.footer-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+.footer-container img{
+  width: 162px;
+  height: 32px;
+}
+
+.footer-container span{
+  color: var(--white);
+  font-size: 40px;
+}
+
+footer h4{
+  color: var(--white);
+  opacity: 0.3;
+  font-size: 12px;
+}
+
+.hero-container .nav-container li:hover, li:active{
+  background-color: var(--red);
+}
+
+button:hover, button:active{
+  opacity: 0.9;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .nav-container{
+    padding: 0 5vw;
+  }
+
+  .what-we-do{
+    margin-bottom: 300px;
+  }
+
+  .what-we-do .services-container{
+    width: 472px;
+  }
+
+  .what-we-do .services-container .services{
+    flex-wrap: wrap;
+    column-gap: 72px;
+  }
+
+  .what-we-do .services-container .services li{
+    inline-size: 200px;
+  }
+
+  .results{
+    padding-bottom: 400px;
+  }
+
+  .results .services-container{
+    width: 472px;
+  }
+
+  .results .services-container .services{
+    flex-wrap: wrap;
+    column-gap: 70px;
+    row-gap: 70px;
+  }
+
+  .results .services li:nth-child(4) h3,
+  .results .services li:nth-child(3) h3{
+    top: 160%;
+  }
+  
+  .results .services li:nth-child(4) p,
+  .results .services li:nth-child(3) p{
+    top: 200%;
+  }
+}
+
+@media only screen and (max-width: 480px){
+
+  .nav-container .holberton_school-icon-menu{
+    font-size: 25px;
+    color: var(--white);
+    margin-top: 5px;
+  }
+
+  .nav-container img{
+    width: 161px;
+    height: 32px;
+  }
+
+  .hero-container{
+    width: 480px;
+    height: 869px;
+    background-position: 35%,0;
+  }
+
+  .hero-cta{
+    width: 357px;
+    height: 436px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+  .hero-cta .small{
+    padding: 0 50px
+  }
+
+  .hero-container .nav-container .nav-list li{
+    display: none;
+  }
+
+  .what-we-do{
+    margin-bottom: 0px;
+  }
+  
+  .we-do{
+    width: 325px;
+    height: 288px;
+  }
+  .what-we-do .services-container{
+    width: 207px;
+    height: 1020px;
+    margin-bottom: 0;
+  }
+
+  .results{
+    width: 480px;
+    height: 1491px;
+    padding-bottom: 0;
+  }
+
+  .results .services{
+    padding-top: 50px;
+  }
+
+  .results .services-container{
+    width: 190px;
+  }
+
+  .results .services-container .services{
+    flex-wrap: wrap;
+    column-gap: 70px;
+    row-gap: 70px;
+  }
+
+  .results .services li:nth-child(1) h3{
+    top: 40%;
+  }
+  .results .services li:nth-child(2) h3{
+    top: 180%;
+  }
+  .results .services li:nth-child(3) h3{ 
+    top: 315%;
+  }
+  .results .services li:nth-child(4) h3{
+    top: 450%;
+  }
+
+  .results .services li:nth-child(1) p{
+    top: 75%;
+  }
+  .results .services li:nth-child(2) p{
+    top: 215%;
+  }
+  .results .services li:nth-child(3) p{
+    top: 350%;
+  }
+  .results .services li:nth-child(4) p{
+    top: 490%;
+  }
+
+
+  .footer-container{
+    flex-wrap: wrap;
+    row-gap: 40px;
+    width: 162px;
+    margin: 0 auto;
+  }
+
+  .footer-container span{
+    font-size: 30px;
+  }
+
+}
